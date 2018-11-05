@@ -32,9 +32,9 @@ public:
             {
                 objfile >> tmp_v1 >> tmp_v2 >> tmp_v3;
                 Triangle tmp_triangle;
-                tmp.vertices[ 0 ] = vertices[ std::stoi( tmp_v1 ) - 1 ];
-                tmp.vertices[ 1 ] = vertices[ std::stoi( tmp_v2 ) - 1 ];
-                tmp.vertices[ 2 ] = vertices[ std::stoi( tmp_v3 ) - 1 ];
+                tmp_triangle.vertices[ 0 ] = vertices[ std::stoi( tmp_v1 ) - 1 ];
+                tmp_triangle.vertices[ 1 ] = vertices[ std::stoi( tmp_v2 ) - 1 ];
+                tmp_triangle.vertices[ 2 ] = vertices[ std::stoi( tmp_v3 ) - 1 ];
                 triangles.push_back( tmp_triangle );
             }
 
