@@ -5,9 +5,9 @@
 class Triangle
 {
 public:
-	V3D vertex[3]{};
-	V3D normal[3]{};
+	Vector3D vertices[3]{};
+	Vector3D normal[3]{};
 
-	bool Intersect(const Ray &ray, V3D *point, double distance) const;
-	V3D GetNormal(const V3D &point) const;
+	bool Intersect(const Ray &ray, Vector3D *point, double distance) const;
+	Vector3D GetNormal(const Vector3D &point) const;
 };
